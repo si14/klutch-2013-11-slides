@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+	<meta charset="utf-8">
+
+	<title>ФП вышло из моды</title>
+
+	<meta name="description" content="Talk about Clojure in general">
+	<meta name="author" content="Dmitry Groshev">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<!--
+        <link rel="stylesheet" href="css/theme/default.css" id="theme"> -->
+	<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+	<link rel="stylesheet" href="lib/css/hemisu-light.css">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+	  document.write( '
+      <link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js">
+        </script>
+		<![endif]-->
+  </head>
+
+  <body>
+	<div class="reveal">
+	  <!-- Any section element inside of this container is displayed as a slide -->
+	  <div class="slides">
+		<section>
+		  <h1>Скажем нет ФП</h1>
+		  <h3>забудьте это словосочетание</h3>
+		  <p>
+			<small>Дмитрий Грошев (<a href="http://twitter.com/lambdadmitry">@lambdadmitry</a>)</small>
+		  </p>
+		</section>
+
+        <section>
+          <img src="sonnyboy.jpg">
+        </section>
+
+        <section>
+          <ul>
+            <li>ненужные обобщения не нужны
+            <li>забудьте про ФП
+            <li>…
+            <li>PROFIT
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>раньше было проще
+            <li>ФП не существует
+            <li>будущее сложно и прекрасно
+          </ul>
+        </section>
+
+        <section>
+          <h1>Раньше было проще</h1>
+        </section>
+
+        <section>
+          <img src="eniac.jpg">
+        </section>
+
+        <section>
+          <img src="hudsonbridge.jpg">
+        </section>
+
+        <section>
+          <h3>C</h3>
+<pre><code data-trim class="large c">for (int i = 0; i &lt; 10; i++) {
+    foo(i);
+}
+</code></pre>
+          <ul>
+            <li>тип
+            <li>цикл
+            <li>функция
+          </ul>
+        </section>
+
+        <section>
+          <img src="pottery.jpg">
+        </section>
+
+        <section>
+          <h3>«Парадигмы»</h3>
+          <img src="potterwheel.jpg" width="80%">
+        </section>
+
+        <section>
+          <h1>ФП уже не существует</h1>
+          <p>это миф</p>
+        </section>
+
+        <section>
+          <h3>Лямбда</h3>
+          <ul>
+            <li>название из lambda calculus
+            <li>простая идея
+            <li>есть уже везде
+          </ul>
+        </section>
+
+        <section>
+          <img src="galvanized.jpg">
+        </section>
+
+        <section>
+          <img src="fuse.jpg">
+        </section>
+
+        <section>
+          <h2>Erlang</h2>
+          <ul>
+            <li>let it fail
+            <li>изоляция ошибок
+            <li>супервизирование
+          </ul>
+        </section>
+
+        <section>
+          <img src="wing.jpg">
+        </section>
+
+        <section>
+          <h2>Clojure</h2>
+          <ul>
+            <li>разделение обязанностей
+            <li>decomplection
+          </ul>
+        </section>
+
+        <section>
+          <img src="calc.gif">
+        </section>
+
+        <section>
+          <h2>Haskell</h2>
+          <ul>
+            <li>типы
+            <li>Ordnung muss sein!
+          </ul>
+        </section>
+
+        <section>
+          <img src="history.jpg">
+        </section>
+
+        <section>
+          <h2>Immutability</h2>
+          <ul>
+            <li>естественное свойство мира с текущим временем
+            <li>mutability — абстракция или оптимизация
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>ФП разваливается на концепции
+            <li>зачем они?
+          </ul>
+        </section>
+
+        <section>
+          <h1>Будущее</h1>
+          <p>Сложное, но прекрасное</p>
+        </section>
+
+        <section>
+          <h2>Сложность</h2>
+          <ul>
+            <li>essential
+            <li>accidental
+          </ul>
+        </section>
+
+        <section>
+          <h2>Accidental</h2>
+          <ul>
+            <li>big ball of mud
+            <li>CRUD'ы и индусы
+            <li>рельсы, хипстеры, твиттер
+          </ul>
+        </section>
+
+        <section>
+          <h2>Essential</h2>
+          <ul>
+            <li>потолок 4GHz
+            <li>распределённый софт (web-app'ы тоже!)
+            <li>отзывчивые интерфейсы
+            <li>AI
+          </ul>
+        </section>
+
+        <section>
+          <h2>Абстракции</h2>
+          <ul>
+            <li>в коде
+            <li>протекают
+          </ul>
+        </section>
+
+        <section>
+          <p>Запрос к удалённому серверу</p>
+        </section>
+
+        <section>
+          <p>Цепочка запросов к удалённым серверам</p>
+        </section>
+
+        <section>
+          <p>Цепочка запросов к удалённым серверам с таймаутами</p>
+        </section>
+
+        <section>
+          <p>Цепочка запросов к удалённым серверам с таймаутами и альтернативами</p>
+        </section>
+
+        <section>
+          <h2>Идеи/концепции</h2>
+          <ul>
+            <li>в голове
+            <li>не могут протекать
+            <li>ортогональны
+          </ul>
+        </section>
+
+        <section>
+          <h2>Идеи/концепции</h2>
+          <ul>
+            <li>разделение обязанностей
+            <li>изоляция ошибок
+            <li>контроль корректности
+            <li>иммутабельность
+            <li>монады и алгебра
+            <li>коммутативность
+            <li>идемпотентность
+            <li>логический вывод
+            <li>поток событий
+            <li>реактивность и правила
+          </ul>
+        </section>
+
+        <section>
+          <h1>Заключение</h1>
+        </section>
+
+        <section>
+          <ul>
+            <li>ненужные обобщения не нужны
+            <li>забудьте про ФП
+            <li>…
+            <li>PROFIT
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>раньше было проще
+            <li>сейчас ФП не существует
+            <li>будущее сложно
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>ФП это ширма для невежества
+            <li>исследуйте новое без шор
+          </ul>
+        </section>
+
+        <section>
+          <h2>Вопросы?</h2>
+          <p>Слайды: <a href="http://si14.github.io/klutch-2013-11-slides">si14.github.io/klutch-2013-11-slides</a></p>
+          <p>Твиттер: <a href="https://twitter.com/lambdadmitry">@lambdadmitry</a></p>
+        </section>
+
+	  </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+
+	  // Full list of configuration options available here:
+	  // https://github.com/hakimel/reveal.js#configuration
+	  Reveal.initialize({
+	  controls: false,
+	  progress: true,
+	  history: true,
+	  center: true,
+
+	  theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+	  transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+	  // Optional libraries used to extend on reveal.js
+	  dependencies: [
+	  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+	  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	  { src: 'plugin/highlight/highlight.js', async: true, callback: function() {  hljs.initHighlightingOnLoad(); } },
+	  { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+	  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+	  // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+	  // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+	  ]
+	  });
+
+	</script>
+
+  </body>
+</html>
